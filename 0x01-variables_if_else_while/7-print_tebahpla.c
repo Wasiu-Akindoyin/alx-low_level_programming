@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <time.h>
+
 /**
  * main - print if the number is positive, zero, or negative
  *
@@ -11,8 +13,8 @@ int main(void)
 char c;
 for (c = 'z'; c >= 'a'; c--)
 {
-	putcher(c);
+	putchar(c);
 }
-putcher('\n');
+putchar('\n');
 return (0);
 }
