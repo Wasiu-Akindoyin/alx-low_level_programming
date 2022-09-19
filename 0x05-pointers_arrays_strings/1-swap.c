@@ -4,6 +4,8 @@
  * swap_int - function that swap the value of the argument
  * @a: first value
  * @b:second value
+ *
+ * Return: void.
  */
 
 void swap_int(int *a, int *b);
