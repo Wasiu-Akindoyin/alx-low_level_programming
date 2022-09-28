@@ -1,26 +1,40 @@
 #include "main.h"
 
 /**
- * helperFunction - checks if sqrt of number exists
+ * sqrt_check - checks for the square root of c
  *
- * @num: number.
+ * @g:guess at sqrt
  *
- * @pSqrt: poissible sqrt of number.
+ * @c: number to find sqrt of
  *
- * Return: sqrt of number ot -1 for error.
+ * Return: -1 or sqrt of c
  */
 
-int helperFunction(int num, int pSqrt)
+int sqrt_check(int g, int c)
 {
-	if ((pSqrt * pSqrt) == num)
+	if (g * g == c)
 	{
-		return (pSqrt);
+		return (g);
+	}
+	else if (g * g > c)
+	{
+		return (-1);
 	}
 	else
 	{
-		if ((pSqrt * pSqrt) > num)
-			return (-1);
-		else
-			return (helperFunction(num, pSqrt + 1));
+		return (sqrt_check(g + 1, c));
 	}
+}
+
+/**
+ * _sqrt_recursion - returns the natural square root of a number
+ * @n: integer to find sqrt of
+ * Return: natural square root or -1
+ */
+
+int _sqrt_recursion(int n)
+{
+	if (n == 0)
+		return (0);
+	return (sqrt_check(1, n));
 }
