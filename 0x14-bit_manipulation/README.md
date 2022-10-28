@@ -1,0 +1,1 @@
+This is a readme file on ALX 0x14. C - Bit manipulation project.
