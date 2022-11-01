@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * error_file - program checks if files can be opened.
  * @file_from: file_from.
@@ -7,7 +6,6 @@
  * @argv: arguments vector.
  * Return: no return.
  */
-
 void error_file(int file_from, int file_to, char *argv[])
 {
 	if (file_from == -1)
@@ -28,7 +26,6 @@ void error_file(int file_from, int file_to, char *argv[])
  * @argv: arguments vector.
  * Return: Always 0.
  */
-
 int main(int argc, char *argv[])
 {
 	int file_from, file_to, err_close;
