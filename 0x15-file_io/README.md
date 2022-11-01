@@ -1,0 +1,1 @@
+This is a readme file on 0x15. C - File I/O ALX project in C.
