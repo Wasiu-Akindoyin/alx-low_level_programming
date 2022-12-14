@@ -1,0 +1,1 @@
+This is a readme file on 0x18. C - Dynamic libraries in ALX SE Program.
